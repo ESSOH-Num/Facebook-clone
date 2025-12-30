@@ -17,7 +17,8 @@
 }
 .left-section,
 .center-section,
-.right-section {
+.right-section,
+.right-section-contain {
   display: flex;
   align-items: center;
 }
@@ -71,7 +72,7 @@
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
-  gap: 30px;
+  gap: 60px;
 }
 .center-item,
 .users-icons,
@@ -99,10 +100,27 @@
 
 .right-section {
   flex: 1;
+  justify-content: end;
 }
-.link {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #0f0f0f;
-  font-weight: 500;
+.right-section-contain {  
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.menu,
+.messenger,
+.notification {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.244);
+  border-radius: 50px;
+  padding: 5px 10px 2px 12px;
+  position: relative;
+}
+.menu-icon,
+.messsenger-icon,
+.notification-icon {
+  height: 26px;
+  width: 26px;
 }
