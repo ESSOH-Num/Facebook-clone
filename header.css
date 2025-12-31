@@ -1,9 +1,10 @@
+/*header style*/
 .header {
   height: 60px;
   background-color: #e3ecff6f;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
   padding: 0 20px;
   border-radius: 50px;
   box-sizing: border-box;
@@ -11,8 +12,9 @@
 
   position: fixed;
   top: 0;
-  left: 20px;
-  right: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 20px;
   z-index: 200;
 }
 .left-section,
@@ -22,6 +24,11 @@
   display: flex;
   align-items: center;
 }
+.left-section,
+.center-section,
+.right-section {
+  min-width: 0;
+}
 
 .left-section {
   flex: 1;
@@ -30,6 +37,7 @@
   height: 40px;
   margin-right: 15px;
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 .facebook-img {
   fill: #1919e1;
@@ -61,7 +69,21 @@
   left: 13px;
 }
 
+/*Responsive*/
+@media (max-width: 900px) {
+  .center-section {
+    display: none;
+  }
+
+  .search {
+    max-width: 180px;
+  }
+}
+
+
 .center-section {
+  flex: 1 1 auto;
+  justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +94,7 @@
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
-  gap: 60px;
+  gap: 10px;
 }
 .center-item,
 .users-icons,
@@ -82,6 +104,70 @@
   height: 28px;
   width: 28px;
   cursor: pointer;
+  padding: 6px 12px;
+  
+}
+.center-item,
+.users-icons,
+.reals,
+.marketplace,
+.gaming,
+.menu,
+.messenger,
+.notification,
+.profil {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.center-item:hover,
+.users-icons:hover,
+.reals:hover,
+.marketplace:hover,
+.gaming:hover,
+.menu:hover,
+.messenger:hover,
+.notification:hover,
+.profil:hover,
+.facebook-logo:hover {
+  transform: scale(1.05);
+}
+
+.users-icons:hover,
+.reals:hover,
+.marketplace:hover,
+.gaming:hover {
+  background-color: #0000001e;
+  border-radius: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(54, 53, 53, 0.874);
+  box-shadow: 1px 2px 5px #0000003b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  top: 50px;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.center-item:hover .tooltip,
+.users-icons:hover .tooltip,
+.reals:hover .tooltip,
+.marketplace:hover .tooltip,
+.gaming:hover .tooltip,
+.menu:hover .tooltip,
+.messenger:hover .tooltip,
+.notification:hover .tooltip,
+.profil:hover .tooltip {
+  opacity: 1;
 }
 
 .center-item-1 {
@@ -93,14 +179,12 @@
 .marketplace,
 .gaming {
   fill: #000000b7;
-  padding-top: 2px;
 }
-
-
 
 .right-section {
   flex: 1;
   justify-content: end;
+  flex: 0 0 auto;
 }
 .right-section-contain {  
   justify-content: space-between;
@@ -113,7 +197,7 @@
   height: 30px;
   width: 30px;
   cursor: pointer;
-  background-color: rgba(128, 128, 128, 0.244);
+  background-color: rgba(128, 128, 128, 0.139);
   border-radius: 50px;
   padding: 5px 10px 2px 12px;
   position: relative;
@@ -123,4 +207,22 @@
 .notification-icon {
   height: 26px;
   width: 26px;
+}
+.menu:hover,
+.messenger:hover,
+.notification:hover {
+  background-color: rgba(128, 128, 128, 0.441);
+}
+
+.profil {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.profil-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
 }
