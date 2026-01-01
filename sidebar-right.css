@@ -1,26 +1,256 @@
+/*Right styles*/
 .sidebar-right {
   position: fixed;
-  display: flex;
-  background-color: #d5e2fd7f;
   top: 0;
-  left: 0;
-  bottom: 0;
-  width: 290px;
-  border-right: 1px solid #e3ecff90;;
+  right: 0;
+  width: 300px;
+  height: 100vh;                  
+  background-color: #d5e2fd4a;
 
-  padding-top: 70px;
+  display: flex;
+  flex-direction: column;       
+  
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   z-index: 100;
 }
-.sidebar-link {
-  height: 50px;
-  justify-content: center;
+
+.sidebar-right-contain {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+
+  position: relative;
+}
+
+.sidebar-right-contain {
+  flex: 1;
+  overflow-y: auto;              /* scroll vertical */
+  height: calc(100vh - 60px);    /* ajuste selon le padding-top du sidebar */
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+}
+
+
+
+
+.sopnsor-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.505);
+}
+
+h3 {
+  color: gray;
+}
+
+.pub,
+.pub2 {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 5px;
   align-items: center;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+.pub:hover,
+.pub2:hover {
+  background-color: rgba(128, 128, 128, 0.116);
+  border-radius: 5px;
+}
+.pub2 {
+  margin-bottom: 25px;
+}
+.sponsor-des {
+  color: black;
+  font-weight: 500;
+}
+.link-sponsor {
+  color: gray;
+  font-size: 14px;
+}
+
+.sponsor-1 {
+  height: 137px;
+  width: 137px;
+}
+.sponsor-img1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.sponsor-2 {
+  height: 137px;
+  width: 137px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  border-radius: 10px;
+}
+.sponsor-img2 {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.head-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.right {
+  display: flex;
+  gap: 10px;
+}
+.searchh,
+.options {
+  height: 24px;
+  width: 24px;
+  fill: gray;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.search-glace-c,
+.option-icon {
+  height: 100%;
+  width: 100%;
+}
+
+.searchh:hover,
+.options:hover {
+  background-color: rgba(128, 128, 128, 0.447);
+  border-radius: 50px;
+}
+
+.contact-item {
+  display: flex;
   flex-direction: column;
   cursor: pointer;
 
-  margin: 5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.559);
+
+  gap: 5px
 }
-.sidebar-link:hover {
-  background-color: rgb(235, 235, 235);
+.contact-item-contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  padding: 5px;
+  
+  transition: background-color 0.5s;
+  gap: 5px
+}
+.contact-item-contain:hover {
+  background-color: rgba(128, 128, 128, 0.322);
+  border-radius: 5px;
+}
+.contact-icon {
+  height: 30px;
+  width: 30px;
+}
+.img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.meta-icon {
+  height: 100%;
+  width: 100%;
+  fill: #1919e1;
+}
+i {
+  color: blue;
+}
+
+.channel-name {
+  font-weight: 500;
+}
+
+
+.sidebar-right-contain {
+  overflow-y: auto;              /* scroll vertical */
+  height: calc(100vh - 60px);    /* ajusté selon le padding-top du sidebar */
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.023) transparent;
+}
+
+.group-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-template-columns: 50px 1fr;
+  cursor: pointer;
+
+  padding: 5px;
+
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+.group-items:hover {
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.212);
+}
+.plus {
+  height: 40px;
+  width: 40px;
+  fill: rgb(49, 49, 49);
+}
+.plus-icon {
+  height: 100%;
+  width: 100%;
+}
+.write {
+  background-color: white;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  box-shadow: 1px 2px 5px gray;
+  padding: 5px;
+  cursor: pointer;
+
+  right: 20px;
+  bottom: -190px;
+}
+.write-icon {
+  height: 100%;
+  width: 100%;
+}
+.tooltip-w {
+  position: absolute;
+  background-color: rgba(54, 53, 53, 0.957);
+  box-shadow: 1px 2px 5px #0000003b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  
+  bottom: 5px;
+  right: 45px;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+
+.write:hover .tooltip-w {
+  opacity: 1;
 }

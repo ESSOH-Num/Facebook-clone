@@ -1,0 +1,121 @@
+.sidebar-left {
+  position: fixed;
+  display: flex;
+  background-color: #d5e2fd4a;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: calc(100vh - 60px);
+  width: 270px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 10px;
+  
+
+  z-index: 100;
+
+  
+}
+.sidebar-left-contain {
+  flex: 1;                      
+  overflow-y: auto;       
+
+  padding: 10px;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.023) transparent;
+}
+
+
+.sidebar-link {
+  display: flex;
+  height: 45px;
+  width: 240px;
+  cursor: pointer;
+  padding: 5px 10px;
+
+  align-items: center;
+  flex-direction: row;
+  transition: all 0.3s ease;
+}
+.sidebar-link:hover {
+  background-color: rgba(7, 4, 46, 0.105);
+  border-radius: 5px;
+}
+.sidebar-link:hover .sidebar-link-contain {
+  transform: scale(1.1);
+}
+.sidebar-link-contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 50px 1fr;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.link-icon {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  fill: #1919e1;
+  border-radius: 50px;
+}
+.link-icon-users {
+  border-radius: 50px;
+  background-color: #1919e1;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+.friendss-icon {
+  fill: rgb(12, 177, 196);
+}
+.story-icon {
+  fill: rgb(164, 26, 24);
+}
+.save-icon {
+  fill:rgb(171, 8, 196);
+}
+.reel-icon {
+  fill: #ab5a21;
+}
+.calandar-icon {
+  fill: rgb(224, 27, 27);
+}
+
+.freinds-icon {
+  fill: aliceblue;
+  height: 22px;
+  width: 22px;
+  padding-left: 6px;
+  padding-top: 6px;
+}
+.channel-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+.channel-name {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .sidebar-left {
+    display: none;
+  }
+}
