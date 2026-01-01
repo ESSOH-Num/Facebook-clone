@@ -2,3 +2,15 @@ body,
 .sidebar-right {
   font-family: "Roboto", sans-serif;
 }
+main {
+  display: flex;
+  position: absolute;
+  background-color: #f6f9ffab;
+  padding-top: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 99;
+}
