@@ -1,0 +1,140 @@
+.main-contain {
+  padding-top: 80px;
+  padding-left: 280px;
+  padding-right: 320px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f6f9ff;
+}
+
+.feed {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Carte générale */
+.create-post,
+.post {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  padding: 12px;
+}
+
+/* Avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CREATE POST */
+.create-top {
+  display: flex;
+  gap: 10px;
+}
+
+.create-top input {
+  flex: 1;
+  border: none;
+  background: #f0f2f5;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.create-top input:focus {
+  outline: none;
+}
+
+.create-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+.action {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action:hover {
+  background: #f0f2f5;
+}
+
+/* POST */
+.post-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.time {
+  font-size: 12px;
+  color: gray;
+}
+
+.post-text {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.post-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  font-size: 14px;
+  color: #65676b;
+}
+
+.post-actions span {
+  cursor: pointer;
+}
+
+.post-actions span:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1100px) {
+  .main-contain {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-contain {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+

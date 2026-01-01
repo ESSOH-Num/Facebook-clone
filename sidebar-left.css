@@ -1,7 +1,7 @@
 .sidebar-left {
   position: fixed;
   display: flex;
-  background-color: #f6f9ffab;
+  background-color: #f6f9ff;
   top: 0;
   left: 0;
   bottom: 0;
@@ -114,7 +114,16 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
+
+/*Responsive*/
+@media (max-width: 1100px) {
+  .sidebar-left {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
   .sidebar-left {
     display: none;
   }

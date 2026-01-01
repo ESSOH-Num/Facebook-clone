@@ -5,7 +5,7 @@
   right: 0;
   width: 300px;
   height: 100vh;                  
-  background-color: #f6f9ffab;
+  background-color: #f6f9ff;
 
   display: flex;
   flex-direction: column;       
@@ -257,7 +257,8 @@ i {
   opacity: 1;
 }
 
-@media (max-width: 1000px) {
+/* Laptop */
+@media (max-width: 900px) {
   .sidebar-right {
     display: none;
   }
