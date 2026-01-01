@@ -254,3 +254,9 @@ i {
 .write:hover .tooltip-w {
   opacity: 1;
 }
+
+@media (max-width: 890px) {
+  .sidebar-right {
+    display: none;
+  }
+}
