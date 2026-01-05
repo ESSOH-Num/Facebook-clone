@@ -1,7 +1,7 @@
 .sidebar-left {
   position: fixed;
   display: flex;
-  background-color: #f6f9ff;
+  background-color: #f0f0f3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -16,9 +16,7 @@
   padding-left: 10px;
   
 
-  z-index: 100;
-
-  
+  z-index: 100; 
 }
 .sidebar-left-contain {
   flex: 1;                      
@@ -44,7 +42,7 @@
   transition: all 0.3s ease;
 }
 .sidebar-link:hover {
-  background-color: rgba(7, 4, 46, 0.105);
+  background-color: rgba(194, 190, 251, 0.244);
   border-radius: 5px;
 }
 .sidebar-link:hover .sidebar-link-contain {
@@ -101,6 +99,7 @@
   height: 100%;
   width: 100%;
   border-radius: 50px;
+  object-fit: cover;
 }
 .channel-name {
   font-size: 15px;
@@ -117,13 +116,6 @@ a:hover {
 
 /*Responsive*/
 @media (max-width: 1100px) {
-  .sidebar-left {
-    display: none;
-  }
-
-}
-
-@media (max-width: 768px) {
   .sidebar-left {
     display: none;
   }

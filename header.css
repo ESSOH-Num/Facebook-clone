@@ -1,20 +1,20 @@
 /*header style*/
 .header {
   height: 60px;
-  background-color: #f6f9ff;
+  background-color: #fbfcff;
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 0 20px;
   border-radius: 50px;
   box-sizing: border-box;
-  box-shadow: 0 2px 4px rgba(8, 2, 93, 0.185);
+  box-shadow: 0 2px 4px rgba(33, 28, 104, 0.185);
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  margin: 0 20px;
+  margin: 10px 20px;
   z-index: 200;
 }
 .left-section,
@@ -212,6 +212,7 @@
   height: 100%;
   width: 100%;
   border-radius: 50px;
+  object-fit: cover;
 }
 
 
