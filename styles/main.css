@@ -1,7 +1,6 @@
 .main-contain {
   background-color: #f0f0f3;
 
-
   padding-top: 80px;
   padding-left: 280px;
   padding-right: 320px;
@@ -17,7 +16,6 @@
 
   z-index: 99;
 }
-
 
 .write {
   background-color: white;

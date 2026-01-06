@@ -17,6 +17,21 @@
   margin: 10px 20px;
   z-index: 200;
 }
+
+.header-gap-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 10px;
+  background-color: #f0f0f3;
+
+  z-index: 150;
+}
+
+
+
 .left-section,
 .center-section,
 .right-section,
