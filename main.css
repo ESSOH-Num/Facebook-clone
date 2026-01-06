@@ -414,32 +414,44 @@ a {
 
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+.like-item,
+.comment-item,
+.share-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .like-item,
 .comment-item,
 .share-item {
   height: 30px;
-  width: 30px;
-  padding: 2px 25px;
+  width: 1000px;
+  padding: 5px 15px;
   border-radius: 10px;
   fill: rgb(108, 108, 108);
   cursor: pointer;
   transition: background-color 0.3s;
+}
 
-  position: relative;
+.like-icon,
+.cmt-icon,
+.share-icon {
+  height: 50px;
+  width: 30px;
 }
 
 .footer-text {
-  position: absolute;
-  top: 9;
-  left: 60px;
-  color: rgb(64, 64, 64);
+  color: rgb(84, 84, 84);
   font-weight: 500;
 }
 
 .like-item:hover,
 .comment-item:hover,
 .share-item:hover {
-  background-color: rgba(159, 158, 158, 0.103);
+  background-color: rgba(159, 158, 158, 0.212);
 }
 
 
