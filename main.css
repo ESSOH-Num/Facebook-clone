@@ -18,6 +18,7 @@
   z-index: 99;
 }
 
+
 .write {
   background-color: white;
   position: fixed;
@@ -266,7 +267,7 @@
   width: 100%;
   border-radius: 10px;
 
-  box-shadow: 1px 2px 3px rgba(44, 44, 44, 0.555);
+  box-shadow: 0 2px 3px rgba(33, 28, 104, 0.185);
 }
 .post-header {
   display: flex;
@@ -373,7 +374,8 @@ a {
 
 
 .like-data1,
-.like-data {
+.like-data,
+.like-data2 {
   position: absolute;
   padding: 2px;
   height: 15px;
@@ -396,14 +398,57 @@ a {
   border-radius: 50%;
   fill: #fbfcff;
 }
+
+.like-data2 {
+  right: 60px;
+  height: 20px;
+  width: 20px;
+  fill: rgb(84, 84, 84);
+}
+
+
 .emoj-data {
   position: absolute;
   top: 8px;
   left: 45px;
   font-weight: 500;
-  color: rgb(91, 91, 91);
+  color: rgb(80, 80, 80);
   cursor: pointer;
 }
+
+.emoj-data2 {
+  position: absolute;
+  top: 10px;
+  right: 85px;
+  font-weight: 500;
+  color: rgb(84, 84, 84);
+  cursor: pointer;
+}
+.like-data3 {
+  position: absolute;
+  top: 10px;
+  right: 70px;
+  font-weight: 500;
+  color: rgb(84, 84, 84);
+  cursor: pointer;
+}
+.emoj-data3 {
+  position: absolute;
+  top: 10px;
+  right: 34px;
+  font-weight: 500;
+  color: rgb(84, 84, 84);
+  cursor: pointer;
+}
+
+.like-data3 {
+  right: 13px;
+  height: 20px;
+  width: 20px;
+  fill: rgb(84, 84, 84);
+}
+
+
 
 .footer-items {
   display: flex;
