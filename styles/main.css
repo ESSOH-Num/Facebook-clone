@@ -17,6 +17,12 @@
   z-index: 99;
 }
 
+.new-write {
+  position: sticky;
+  z-index: 200;
+}
+
+
 .write {
   background-color: white;
   position: fixed;
@@ -28,10 +34,9 @@
   cursor: pointer;
 
   right: 40px;
-  bottom: 50px;
-
-  z-index: 200px;
+  bottom: 30px;
 }
+
 .write-icon {
   height: 100%;
   width: 100%;
