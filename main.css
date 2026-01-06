@@ -5,7 +5,7 @@
   padding-top: 80px;
   padding-left: 280px;
   padding-right: 320px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 
@@ -177,7 +177,10 @@
 
   cursor: pointer;
 
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
+}
+.story-profil:hover {
+  background-color: rgba(128, 128, 128, 0.24);
 }
 
 .pro-img {
@@ -262,7 +265,6 @@
 .post-contain {
   display: flex;
   flex-direction: column;
-  background-color: #27129a;
   height: 630px;
   width: 100%;
   border-radius: 10px;
@@ -345,7 +347,7 @@ a {
   align-items: center;
   height: 40px;
   background-color: #feffff;
-  padding-left: 8px;
+  padding: 10px 8px; 
 }
 
 .post-picture {
